@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavana Muneppa Portfolio</title>
+
+<link rel="stylesheet" href="protfolio.css">
+</head>
+<body>
+
+
+
+<header class="hero" id="home">
+
+<div class="hamburger" onclick="toggleMenu()">
+☰
+</div>
+
+<nav class="menu" id="menu">
+
+<button onclick="showSection('about')">About</button>
+
+<button onclick="showSection('skills')">Skills</button>
+
+<button onclick="showSection('projects')">Projects</button>
+
+<button onclick="showSection('internship')">Internship</button>
+
+<button onclick="showSection('certifications')">Certifications</button>
+
+<button onclick="showSection('achievements')">Achievements</button>
+
+<button onclick="showSection('contact')">Contact</button>
+
+</nav>
+
+<img src="protfolioimg.jpeg" class="profile" alt="Bhavana">
+
+<h1>Bhavana Muneppa</h1>
+
+<h2 id="typing"></h2>
+
+<p class="tagline">
+Computer Science Engineering Student specializing in Artificial Intelligence and Machine Learning
+</p>
+
+<a href="bhavanaresume(overleaf-1).pdf"
+target="_blank"
+class="resume-btn">
+
+View Resume
+
+</a>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+Hi, I'm Bhavana Muneppa, a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I am passionate about software development, web technologies, and emerging innovations in AI. I have actively participated in hackathons, technical events, and student clubs, which have helped me strengthen my technical, communication, teamwork, and leadership skills.
+
+I recently completed a six-week internship at HAL Bengaluru as a Full Stack Web Developer, where I developed a web application called "Bar Inspection Checklist" using ASP.NET, C#, CSS, and Oracle 10g. This experience provided me with valuable exposure to real-world software development practices and enhanced my problem-solving abilities.
+
+In addition to my academic pursuits, I served as the Editorial Lead of the IEEE Student Branch at Mohan Babu University for one year, where I contributed to content creation, event promotion, and student engagement initiatives. Beyond academics and technical activities, I have actively represented my university in Kho Kho competitions and have won multiple prizes, which have strengthened my discipline, teamwork, and competitive spirit.
+
+I enjoy learning new technologies, taking on challenging projects, and building practical solutions that create a positive impact in the real world.
+
+</p>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+
+<p>Java</p>
+
+<div class="bar">
+<div class="fill java"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Python</p>
+
+<div class="bar">
+<div class="fill python"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>SQL</p>
+
+<div class="bar">
+<div class="fill sql"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>HTML</p>
+
+<div class="bar">
+<div class="fill html"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="bar">
+<div class="fill css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="bar">
+<div class="fill js"></div>
+</div>
+
+</div>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Bar Inspection Checklist</h3>
+
+<p>
+Developed using ASP.NET, C#, CSS and Oracle 10g during HAL Internship.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Medicine Reminder App</h3>
+
+<p>
+Web application for managing medicine schedules and reminders.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Amazon Clone</h3>
+
+<p>
+Responsive e-commerce website using HTML and CSS.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Online Voting System</h3>
+
+<p>
+Java-based secure online voting application.
+</p>
+
+</div>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- INTERNSHIP -->
+
+<section id="internship" class="section">
+
+<h2>Internship</h2>
+
+<div class="card">
+
+<h3>HAL Bengaluru</h3>
+
+<p>
+Full Stack Web Developer Intern
+</p>
+
+<p>
+Duration: 6 Weeks
+</p>
+
+<p>
+Project: Bar Inspection Checklist
+</p>
+
+<p>
+Technologies Used:
+ASP.NET, C#, CSS, Oracle 10g
+</p>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications" class="section">
+
+<h2>Certifications</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="ai-data-analytics.jpeg"
+class="certificate">
+
+<h3>
+Artificial Intelligence and Data Analytics
+</h3>
+
+<p>
+Edunet Foundation
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="generative-ai.jpeg"
+class="certificate">
+
+<h3>
+Generative AI Professional
+</h3>
+
+<p>
+Oracle University
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="bigdata.png"
+class="certificate">
+
+<h3>
+Software Architecture for Big Data
+</h3>
+
+<p>
+Coursera
+</p>
+
+</div>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="section">
+
+<h2>Achievements</h2>
+
+<div class="card">
+
+<ul>
+
+<li>CGPA: 9.4</li>
+
+<li>Editorial Lead – IEEE Student Branch</li>
+
+<li>Completed HAL Internship</li>
+
+<li>Participant in Synapse Hackathon</li>
+
+<li>Represented College in Kho Kho</li>
+
+</ul>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="card contact-links">
+
+<a href="mailto:bhavanamuneppa@gmail.com">
+Email
+</a>
+
+<a href="tel:+918309991208">
+Phone
+</a>
+
+<a href="https://github.com/bhavanamuneppa"
+target="_blank">
+
+GitHub
+
+</a>
+
+<a href="https://www.linkedin.com/in/bhavana-muneppa-140b46343/"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+</div>
+
+<button class="back" onclick="goHome()">
+Home
+</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

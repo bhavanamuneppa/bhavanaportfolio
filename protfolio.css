@@ -1,0 +1,434 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#1f1f1f;
+color:white;
+overflow-x:hidden;
+}
+
+
+
+/* HOME PAGE */
+
+.hero{
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+}
+
+.profile{
+width:260px;
+height:260px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:5px solid white;
+
+box-shadow:
+0 0 20px rgba(255,255,255,.2),
+0 0 50px rgba(255,255,255,.1);
+
+transition:.4s;
+}
+
+.profile:hover{
+transform:scale(1.05);
+}
+
+.hero h1{
+font-size:3rem;
+margin-top:20px;
+}
+
+#typing{
+margin-top:10px;
+height:40px;
+color:#d9d9d9;
+font-size:1.5rem;
+}
+
+.tagline{
+margin-top:10px;
+color:#bdbdbd;
+max-width:700px;
+}
+
+/* MENU */
+
+.menu{
+margin-top:40px;
+
+display:flex;
+gap:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.menu button{
+padding:12px 25px;
+
+border:none;
+
+border-radius:10px;
+
+background:#4a4a4a;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.menu button:hover{
+background:white;
+color:black;
+
+transform:translateY(-3px);
+}
+
+/* RESUME BUTTON */
+
+.resume-btn{
+margin-top:25px;
+
+padding:14px 30px;
+
+background:white;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+transition:.3s;
+}
+
+.resume-btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+display:none;
+
+padding:80px 10%;
+
+min-height:100vh;
+
+animation:fade .5s ease;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.section h2{
+text-align:center;
+
+font-size:2.5rem;
+
+margin-bottom:30px;
+}
+
+/* GLASSMORPHISM CARD */
+
+.card{
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(12px);
+
+-webkit-backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.1);
+
+border-radius:20px;
+
+padding:30px;
+
+line-height:1.8;
+
+box-shadow:
+0 8px 32px rgba(0,0,0,.4);
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill p{
+margin-bottom:8px;
+}
+
+.bar{
+width:100%;
+height:14px;
+
+background:#555;
+
+border-radius:20px;
+
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+
+background:white;
+
+border-radius:20px;
+}
+
+.java{
+width:90%;
+animation:java 2s;
+}
+
+.python{
+width:85%;
+animation:python 2s;
+}
+
+.sql{
+width:80%;
+animation:sql 2s;
+}
+
+.html{
+width:95%;
+animation:html 2s;
+}
+
+.css{
+width:90%;
+animation:css 2s;
+}
+
+.js{
+width:75%;
+animation:js 2s;
+}
+
+@keyframes java{
+from{width:0;}
+to{width:90%;}
+}
+
+@keyframes python{
+from{width:0;}
+to{width:85%;}
+}
+
+@keyframes sql{
+from{width:0;}
+to{width:80%;}
+}
+
+@keyframes html{
+from{width:0;}
+to{width:95%;}
+}
+
+@keyframes css{
+from{width:0;}
+to{width:90%;}
+}
+
+@keyframes js{
+from{width:0;}
+to{width:75%;}
+}
+
+/* GRID */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+}
+
+/* PROJECTS */
+
+.grid .card{
+transition:.4s;
+}
+
+.grid .card:hover{
+
+transform:
+translateY(-10px)
+scale(1.03);
+}
+
+/* CERTIFICATES */
+
+.certificate{
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact-links{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+}
+
+.contact-links a{
+
+text-decoration:none;
+
+background:#444;
+
+color:white;
+
+padding:15px;
+
+text-align:center;
+
+border-radius:10px;
+
+transition:.3s;
+}
+
+.contact-links a:hover{
+
+background:white;
+
+color:black;
+}
+
+/* HOME BUTTON */
+
+.back{
+
+margin-top:30px;
+
+padding:12px 25px;
+
+border:none;
+
+background:white;
+
+color:black;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+}
+
+.back:hover{
+transform:scale(1.05);
+}
+
+/* HAMBURGER */
+
+.hamburger{
+
+display:none;
+
+font-size:32px;
+
+cursor:pointer;
+
+margin-bottom:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.profile{
+width:200px;
+height:200px;
+}
+
+#typing{
+font-size:1.2rem;
+}
+
+.menu{
+display:none;
+flex-direction:column;
+width:100%;
+}
+
+.menu.active{
+display:flex;
+}
+
+.menu button{
+width:100%;
+}
+
+.hamburger{
+display:block;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.section h2{
+font-size:2rem;
+}
+
+}
